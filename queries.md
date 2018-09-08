@@ -27,3 +27,37 @@ SELECT ?Raum ?RaumLabel ?Zeit ?WikidataUID ?Bevoelkerung WHERE {
 ```
 
 The query can be extended by removing the filter
+
+# Wrong preferred rank
+
+The prefered rank does not match with the most recent data
+
+[code link](http://tinyurl.com/yd95yaar)
+```SPARQL
+SELECT ?Quartier ?preferredYear ?maxYear {
+  FILTER(?preferredYear < ?maxYear)
+  {
+SELECT ?Quartier (year(?Zeitpunkt_Stand) as ?preferredYear) WHERE {
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  ?Quartier wdt:P31 wd:Q19644586 ;
+            p:P1082 ?Einwohnerzahl. 
+  ?Einwohnerzahl pq:P585 ?Zeitpunkt_Stand;
+                 wikibase:rank wikibase:PreferredRank .
+}
+}
+  
+  {
+  
+  SELECT ?Quartier (year(max(?Zeitpunkt_Stand2)) as ?maxYear) WHERE {
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  ?Quartier wdt:P31 wd:Q19644586 ;
+            p:P1082 ?Einwohnerzahl2. 
+  ?Einwohnerzahl2 pq:P585 ?Zeitpunkt_Stand2 .
+                 
+}
+GROUP BY ?Quartier
+
+  }
+
+  }
+```
