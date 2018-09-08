@@ -1,0 +1,30 @@
+
+1) querying data from LOSD 
+  a) DONE - list of measures of interrest
+    | FLÄCHE      =
+    | FLÄCHE-RANG =
+    | EINWOHNER       =
+    | EINWOHNER-RANG  =
+    | EINWOHNER-STAND =
+    | BEVÖLKERUNGSDICHTE-RANG =
+
+    | ARBEITSLOSENQUOTE =
+    | ARBEITSLOSENQUOTE-RANG =
+    | ARBEITSLOSENQUOTE-STAND =
+    | ARBEITSPLÄTZE = (Beschäftigte)
+    | ARBEITSPLÄTZE-STAND =
+    | AUSLÄNDERANTEIL =
+    | AUSLÄNDERANTEIL-RANG =
+    | AUSLÄNDERANTEIL-STAND =
+    | RANG-VON = (wäre bei Quartieren immer 34)
+  
+  b) find these values in LOSD
+  
+  c) write queries to pull the data
+  
+2) transform LOSD data into JSON?
+
+3) upload the data into wikidata
+  a) API
+  
+  
