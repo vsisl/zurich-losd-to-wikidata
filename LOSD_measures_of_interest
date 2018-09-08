@@ -1,0 +1,35 @@
+| FLÄCHE =
+	https://ld.stadt-zuerich.ch/statistics/measure/OBF
+	Oberfläche
+	
+| FLÄCHE-RANG =
+
+| EINWOHNER =
+	https://ld.stadt-zuerich.ch/statistics/measure/BEW 
+	Wirtschaftliche Wohnbevölkerung
+	
+| EINWOHNER-RANG =
+| EINWOHNER-STAND =
+
+| BEVÖLKERUNGSDICHTE-RANG =
+	https://ld.stadt-zuerich.ch/statistics/measure/WPF
+	Wohnbevölkerung pro Fläche (ha)
+	??? rather calculate manually? 
+
+| ARBEITSLOSENQUOTE =
+	https://ld.stadt-zuerich.ch/statistics/measure/ALQ
+	Arbeitslosenquote
+
+| ARBEITSLOSENQUOTE-RANG =
+| ARBEITSLOSENQUOTE-STAND =
+
+| ARBEITSPLÄTZE = (Beschäftigte)
+	https://ld.stadt-zuerich.ch/statistics/measure/APL
+	Arbeitsplätze
+
+| ARBEITSPLÄTZE-STAND =
+
+| AUSLÄNDERANTEIL =
+| AUSLÄNDERANTEIL-RANG =
+| AUSLÄNDERANTEIL-STAND =
+| RANG-VON = 34
